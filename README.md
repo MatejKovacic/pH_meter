@@ -2,6 +2,8 @@
 Arduino based BlueSensor compatible pH meter.
 
 pH is a measure of acidity or alkalinity of a solution. pH scale ranges from 0 (acid) to 14 (alkaline). The pH indicates the concentration of hydrogen [H]+ ions present in certain solutions.
+
+![Calibrating pH Meter](pH_meter_with_computer.jpg)
  
 ## Materials needed
 - Arduino Nano
@@ -34,6 +36,7 @@ Please note that you need to calibrate pH sensor. In order to do this, you need 
 
 HINT: you can use *pH_meter.ods* for easier calculation.
 
-![Visualisation of a measured linear function](pH_meter_KmPlot.png)
-
 When you get linear formula for measuring pH value, insert it to *pH_meter.ino*, compile it and upload it to Arduino Nano.
+
+![Visualisation of a measured linear function](pH_meter_KmPlot.png)
+You can also draw a computed linear function for computing pH value from measured voltage. In our example, we calibrated pH probe several times and always got slightly different result (this is due of low quality of the probe). On a graph are shown all three different computed linear functions. 
