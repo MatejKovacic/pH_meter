@@ -34,6 +34,7 @@ pH meter - Arduino Nano
 ## Calibration
 Please note that you need to calibrate pH sensor. In order to do this, you need two pH reference values and measure the voltage returned by the sensor on the pin Po. The best thing to do is to use a calibration solution in powders. Use two powders with known pH and obtain the respective voltages. Then compute the formula (k and n): `pHValue = k * phVoltage + n`
 
+![Computing of linear function from two test sample data](computing_linear_function.png)
 HINT: you can use *pH_meter.ods* for easier calculation.
 
 When you get linear formula for measuring pH value, insert it to *pH_meter.ino*, compile it and upload it to Arduino Nano.
