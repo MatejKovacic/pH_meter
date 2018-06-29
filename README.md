@@ -40,4 +40,8 @@ HINT: you can use *pH_meter.ods* for easier calculation.
 When you get linear formula for measuring pH value, insert it to *pH_meter.ino*, compile it and upload it to Arduino Nano.
 
 ![Visualisation of a measured linear function](pH_meter_KmPlot.png)
-You can also draw a computed linear function for computing pH value from measured voltage. In our example, we calibrated pH probe several times and always got slightly different result (this is due of low quality of the probe). On a graph are shown all three different computed linear functions. 
+You can also draw a computed linear function for computing pH value from measured voltage. In our example, we calibrated pH probe several times and always got slightly different result (this is due of low quality of the probe). On a graph are shown all three different computed linear functions.
+
+## Running application
+Connect Arduino to USB port (*ttyUSB0*) and run from the directory where BlueSensor application is located:
+```python bluesensor-server.py read-serial 0```
